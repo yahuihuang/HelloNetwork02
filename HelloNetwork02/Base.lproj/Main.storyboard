@@ -15,27 +15,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCC-1U-s1L">
-                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RCC-1U-s1L">
+                                <rect key="frame" x="37.5" y="224" width="300" height="219"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="83z-vf-bzF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gq8-jC-wU5">
+                                <rect key="frame" x="37.5" y="224" width="300" height="219"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RCC-1U-s1L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5zl-AY-dHm"/>
+                            <constraint firstItem="Gq8-jC-wU5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PLa-6m-Vse"/>
+                            <constraint firstItem="Gq8-jC-wU5" firstAttribute="width" secondItem="RCC-1U-s1L" secondAttribute="width" id="QCy-bz-qWa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RCC-1U-s1L" secondAttribute="trailing" constant="37.5" id="Qfl-R5-iAL"/>
                             <constraint firstItem="RCC-1U-s1L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wsu-jf-aMc"/>
                             <constraint firstItem="RCC-1U-s1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37.5" id="gj9-DI-wVH"/>
+                            <constraint firstItem="83z-vf-bzF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hGb-Fd-o70"/>
+                            <constraint firstAttribute="trailing" secondItem="83z-vf-bzF" secondAttribute="trailing" id="oUj-xQ-C9e"/>
+                            <constraint firstItem="83z-vf-bzF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ukp-dp-Vjp"/>
+                            <constraint firstItem="Gq8-jC-wU5" firstAttribute="height" secondItem="RCC-1U-s1L" secondAttribute="height" id="wNO-92-FOe"/>
+                            <constraint firstItem="Gq8-jC-wU5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x8Q-CA-ZQM"/>
+                            <constraint firstItem="RCC-1U-s1L" firstAttribute="firstBaseline" secondItem="83z-vf-bzF" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="yjm-2A-WVx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="Gq8-jC-wU5" id="9of-bb-ob0"/>
                         <outlet property="imageView" destination="RCC-1U-s1L" id="2bb-2w-IrT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="96"/>
+            <point key="canvasLocation" x="138.40000000000001" y="95.802098950524751"/>
         </scene>
     </scenes>
 </document>
