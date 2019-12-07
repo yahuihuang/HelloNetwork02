@@ -15,18 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RCC-1U-s1L">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCC-1U-s1L">
                                 <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="a95-Ff-oiz"/>
-                                    <constraint firstAttribute="height" constant="300" id="rZq-UG-Spk"/>
-                                </constraints>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RCC-1U-s1L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dSc-rX-Q4x"/>
-                            <constraint firstItem="RCC-1U-s1L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pzs-45-f0d"/>
+                            <constraint firstItem="RCC-1U-s1L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5zl-AY-dHm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RCC-1U-s1L" secondAttribute="trailing" constant="37.5" id="Qfl-R5-iAL"/>
+                            <constraint firstItem="RCC-1U-s1L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wsu-jf-aMc"/>
+                            <constraint firstItem="RCC-1U-s1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37.5" id="gj9-DI-wVH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
