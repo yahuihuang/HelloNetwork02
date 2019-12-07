@@ -14,13 +14,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let urlString = "https://image.freepik.com/free-vector/kids-wearing-colorful-costumes-different-superheroes-retro-set-isolated_1284-15219.jpg"
+        let start = Date().timeIntervalSince1970
         if let url = URL(string: urlString) {
-            do {
-                let imageData = try Data(contentsOf: url)
-                let image = UIImage(data: imageData)
-                imageView.image = image
-            } catch {
-                print(error.localizedDescription)
+            DispatchQueue.global().async {
+
+                do {
+                    let imageData = try Data(contentsOf: url)
+                    DispatchQueue.main.async {
+                        let image = UIImage(data: imageData)
+                        self.imageView.image = image
+                        print(Date().timeIntervalSince1970 - start)
+                    }
+                    
+                } catch {
+                    print(error.localizedDescription)
+                }
             }
             
         }
